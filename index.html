@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+        <form name="calculator" class="calculator">
+
+            <div class="input">
+                <input type="text" name="text" placeholder="0">
+            </div>
+            <div class="btn">
+                
+                <div class="sl">
+                    <input type="button" id="one"  value=7 onclick="display(7)">
+                    <input type="button" id="one"  value=4 onclick="calculator.text.value+=4">
+                    <input type="button" id="one"  value=1 onclick="calculator.text.value+=1">
+                    <input type="button" id="one"  value=0 onclick="calculator.text.value+=0">
+                </div>
+                <div class="sl">
+                    <input type="button" id="two"  value='&radic;' onclick="calculator.text.value= Math.sqrt(calculator.text.value)">
+                    <input type="button" id="two" value=8 onclick="calculator.text.value+=8">
+                    <input type="button" id="two" value=5 onclick="calculator.text.value+=5">
+                    <input type="button" id="two" value=2 onclick="calculator.text.value+=2">
+                </div>
+                <div class="sl">
+                    <input type="button" id="a"  value="=" onclick="calculator.text.value=eval(calculator.text.value)"> 
+                </div>
+                <div class="sl">
+                    <input type="button" id="three"  value='&larr;' onclick="calculator.text.value=calculator.text.value.slice(0,-1)">
+                    <input type="button" id="three"  value=9 onclick="calculator.text.value+=9"> 
+                    <input type="button" id="three"  value=6 onclick="calculator.text.value+=6"> 
+                    <input type="button" id="three"  value=3 onclick="calculator.text.value+=3"> 
+                   
+                    
+                </div>
+                <div class="sl">
+                    <input style="background-color: red;" type="button" id="four"  value=C  onclick="calculator.text.value=''">
+                    <input type="button" id="four"  value="+" onclick="calculator.text.value+='+'"> 
+                    <input type="button" id="four"  value="/" onclick="calculator.text.value+='/'">
+                    <input type="button" id="four"  value="*" onclick="calculator.text.value+='*'">
+                    <input type="button" id="four"  value="-" onclick="calculator.text.value+='-'">
+                    
+                    
+                </div>
+
+                
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
